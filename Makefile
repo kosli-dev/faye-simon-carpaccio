@@ -9,11 +9,14 @@ $(VENV): requirements.txt requirements-dev.txt
 	$(BIN)/pip install --upgrade -r requirements-dev.txt
 	touch $(VENV)
 
+.phony: init
+init: $(VENV)
+
 .PHONY: test
 test: $(VENV)
 	$(BIN)/pytest
 
-.PHONT: dev
+.PHONY: dev
 dev: $(VENV) src/server.py
 	$(BIN)/python src/server.py
 

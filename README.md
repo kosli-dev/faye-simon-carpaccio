@@ -1,22 +1,27 @@
 # Flask Template
 
+This template project provides a very simple Flask application with pytest configured.
+
+It uses a venv virtual environment. This should be transparent using the Makefile.
+
+You need python3 and make installed.
+
 ## Getting Started
 
-1. Create a virtual environment:
+1. Configure the venv and install requirements
+
+  ```bash
+  make init
+  ```
+
+1. Run tests
 
    ```bash
-   python -m venv .venv
-   source .venv/bin/activate
+   make test
    ```
 
-2. Install dependencies:
+2. Run the dev server
 
    ```bash
-   pip install -r requirements.txt
-   ```
-
-3. Run tests:
-
-   ```bash
-   pytest
+   make deb
    ```
