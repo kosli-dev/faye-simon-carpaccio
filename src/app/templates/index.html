@@ -13,12 +13,15 @@
     <input type="number" id="number_of_items" name="number_of_items" required>
     <button type="submit">Submit</button>
     <br>
-    <label for="state">State: UT</label> 
+    <label for="state">State:</label> 
+    <select name="state" id="state">
+        <option value="UT">UT</option>
+    </select>
 </form>
 
 <p>Item price: {{ item_price }}</p>
 <p>Number of items: {{ number_of_items }}</p>
 <p>Total price: {{ total_price }}</p>
-<p>Tax rate: {{ ut_tax_rate }}%</p>
+<p>Tax rate: {{ tax_rate }}%</p>
 <p>Total price with tax: {{ total_price_with_tax }}</p>
 {% endblock %}
