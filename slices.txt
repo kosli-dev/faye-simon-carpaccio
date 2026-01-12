@@ -20,3 +20,12 @@ Only selected state is Utah
 Display Tax rate
 
 4. User can select from list of states
+Display appropriate tax rate
+
+5. Apply tax rate to total
+
+6. Apply 3% discount to orders over $1000
+
+7. Apply dicount rates for different totals
+
+8. Display discount rate to user

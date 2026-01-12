@@ -18,12 +18,12 @@
             <option value="{{ state }}" {% if state == selected_state %}selected{% endif %}>{{ state }}</option>
         {% endfor %}
     </select>
-    <br>
+    <br><br>
     <button type="submit">Submit</button>
 </form>
 
-<p>Item price: {{ item_price }}</p>
-<p>Number of items: {{ number_of_items }}</p>
+<p>Discount rate: {{ discount_rate }}%</p>
+<p>Discount amount: {{ discount_amount }}</p>
 <p>Total price: {{ total_price }}</p>
 <p>Tax rate: {{ tax_rate }}%</p>
 <p>Total price with tax: {{ total_price_with_tax }}</p>
