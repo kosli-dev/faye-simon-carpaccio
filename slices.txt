@@ -17,6 +17,6 @@ Then I see the total price
 
 3. 
 Only selected state is Utah
-Tax is applied for Utah state
+Display Tax rate
 
 4. User can select from list of states
