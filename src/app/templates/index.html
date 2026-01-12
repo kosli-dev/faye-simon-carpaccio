@@ -7,16 +7,19 @@
 
 <form action="/" method="post">
     <label for="item_price">Item price:</label>
-    <input type="number" id="item_price" name="item_price" required>
+    <input type="number" id="item_price" name="item_price" value="{{ item_price }}" required>
     <br>
     <label for="number_of_items">Number of items:</label>
-    <input type="number" id="number_of_items" name="number_of_items" required>
-    <button type="submit">Submit</button>
+    <input type="number" id="number_of_items" name="number_of_items" value="{{ number_of_items }}" required>
     <br>
-    <label for="state">State:</label> 
+    <label for="state">State:</label>
     <select name="state" id="state">
-        <option value="UT">UT</option>
+        {% for state in states %}
+            <option value="{{ state }}" {% if state == selected_state %}selected{% endif %}>{{ state }}</option>
+        {% endfor %}
     </select>
+    <br>
+    <button type="submit">Submit</button>
 </form>
 
 <p>Item price: {{ item_price }}</p>
