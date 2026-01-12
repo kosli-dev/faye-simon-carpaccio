@@ -1,0 +1,22 @@
+Accept 3 inputs from the user:
+How many items
+Price per item
+2-letter state code
+
+Output the total price. Give a discount based on the total price, add state tax based on the state and the discounted price.
+
+
+1. Given I am on the form page
+When I submit the price of an item
+Then I see the price of the item displayed
+
+2. Input: number of items
+Output: Total price
+When I choose the number of items and their price
+Then I see the total price 
+
+3. 
+Only selected state is Utah
+Tax is applied for Utah state
+
+4. User can select from list of states
