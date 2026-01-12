@@ -13,6 +13,11 @@ def register_routes(app: Flask) -> None:
             total_price = round(item_price * number_of_items, 2)
             tax_rate = states[request.form["state"]]
             total_price_with_tax = round(total_price * (1 + tax_rate / 100), 2)
+
+            if total_price > 1000:
+                discount = 0.03
+                total_price = round(total_price * (1 - discount), 2)
+
             return render_template(
                 "index.html",
                 item_price=item_price,
